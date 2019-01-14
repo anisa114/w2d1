@@ -20,8 +20,7 @@ function getAndPrintHTML (options) {
 
   // the callback is invoked when a `data` chunk is received
 
-
-response.on('data', function (data) {
+  response.on('data', function (data) {
      var respContent = '' ;
      respContent += data.toString() ;//data is a buffer instance
      console.log(respContent);
